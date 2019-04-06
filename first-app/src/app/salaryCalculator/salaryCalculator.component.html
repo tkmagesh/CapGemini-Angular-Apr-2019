@@ -1,0 +1,36 @@
+<h1>Salary Calculator</h1>
+<hr/>
+<section>
+	<div class="field">
+		<label for="">Basic :</label>
+		<input type="number" (keyup)="model.basic = $event.target.valueAsNumber">
+	</div>
+	<div class="field">
+		<label for="">HRA :</label>
+		<input type="number" (change)="model.hra = $event.target.valueAsNumber">
+	</div>
+	<div class="field">
+		<label for="">DA :</label>
+		<input type="number" (change)="model.da = $event.target.valueAsNumber">
+	</div>
+	<div class="field">
+		<label for="">Tax :</label>
+		<input type="range" min="0" max="30" value="0" (change)="model.tax = $event.target.valueAsNumber">
+	</div>
+	<div class="field">
+		<input type="button" value="Calculate" (click)="model.calculate()">
+	</div>
+	<div class="field">
+		<table>
+			<tbody>
+				<tr>
+					<td>{{model.basic}}</td>
+					<td>{{model.hra}}</td>
+					<td>{{model.da}}</td>
+					<td>{{model.tax}}</td>
+					<td>{{model.salary | currency:'INR'}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
