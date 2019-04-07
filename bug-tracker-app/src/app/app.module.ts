@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BugTrackerComponent } from '../bugTracker/bugTracker.component';
 
 import { TrimTextPipe } from '../bugTracker/pipes/trimText.pipe';
+import { SortPipe } from '../bugTracker/pipes/sort.pipe';
 
 import { BugOperationsService } from '../bugTracker/services/bugOperations.service';
 
@@ -13,6 +14,7 @@ import { BugOperationsService } from '../bugTracker/services/bugOperations.servi
     AppComponent
     , BugTrackerComponent
     , TrimTextPipe
+    , SortPipe
   ],
   imports: [
     BrowserModule
