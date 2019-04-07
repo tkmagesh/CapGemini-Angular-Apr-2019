@@ -32,7 +32,7 @@ export class BugTrackerComponent{
 	}
 
 	getClosedCount(){
-		return this.bugs.reduce((result, bug) => bug.isClosed ? ++result : result, 0);
+		
 	}
 
 
