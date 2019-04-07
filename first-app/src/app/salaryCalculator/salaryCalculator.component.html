@@ -28,7 +28,10 @@
 					<td>{{model.hra}}</td>
 					<td>{{model.da}}</td>
 					<td>{{model.tax}}</td>
-					<td>{{model.salary | currency:'INR'}}</td>
+					<td *ngIf="model.salary > 0"
+						[ngClass]="{goodSalary : model.salary >= 10000, poorSalary : model.salary < 10000}">
+						{{model.salary | currency:'INR'}}
+					</td>
 				</tr>
 			</tbody>
 		</table>

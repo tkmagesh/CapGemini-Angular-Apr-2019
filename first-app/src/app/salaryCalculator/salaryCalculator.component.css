@@ -8,3 +8,9 @@ td{
 	padding-right: 20px;
 	font-size: 20pt;
 }
+.poorSalary{
+	color : red;
+}
+.goodSalary{
+	color : green;
+}
