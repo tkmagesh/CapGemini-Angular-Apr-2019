@@ -13,10 +13,7 @@ export class BugTrackerComponent{
 	sortDesc : boolean = false;
 
 	constructor(private bugOperations : BugOperationsService){
-		this.bugs.push({ name : 'Server communication failure', isClosed : false,  createdAt : new Date(2019, 3, 7, 9, 0, 0)});
-		this.bugs.push({ name : 'User actions not recognized', isClosed : false,  createdAt : new Date(2019, 2, 7, 9, 0, 0)});
-		this.bugs.push({ name : 'Application not responding', isClosed : false,  createdAt : new Date(2019, 3, 7, 13, 0, 0)});
-		this.bugs.push({ name : 'Data integrity checks failed', isClosed : false,  createdAt : new Date(2019, 3, 5, 9, 0, 0)});
+		
 	}
 	
 	onNewBugCreated(newBug : Bug){
