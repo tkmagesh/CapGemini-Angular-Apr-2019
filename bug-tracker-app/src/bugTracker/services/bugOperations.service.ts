@@ -4,7 +4,8 @@ export class BugOperationsService{
 	createNew(newBugName : string) : Bug {
 		let newBug = {
 			name : newBugName,
-			isClosed : false
+			isClosed : false,
+			createdAt : new Date()
 		};
 		return newBug;
 	}

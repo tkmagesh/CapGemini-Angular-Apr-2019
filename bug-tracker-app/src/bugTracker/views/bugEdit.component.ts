@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { BugOperationsService } from '../services/bugOperations.service';
+import { Bug } from '../models/Bug';
 
 @Component({
 	selector : 'app-bug-edit',
